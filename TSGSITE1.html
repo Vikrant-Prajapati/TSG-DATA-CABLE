@@ -3,38 +3,123 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TSG Cables – Bharosa bhi, Speed bhi</title>
+  <title>TSG Data Cable – Bharosa bhi, Speed bhi</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
-    header { background: #222; color: #fff; padding: 20px; text-align: center; }
-    section { padding: 20px; }
-    .highlights, .contact { background: #fff; border-radius: 8px; padding: 20px; margin: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
-    h2 { color: #333; }
-    ul { list-style: none; padding: 0; }
-    li { margin-bottom: 10px; }
-    .model { font-weight: bold; color: #555; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #ff6e00, #ffb347);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+    }
+    header p {
+      font-size: 1.2em;
+      font-style: italic;
+    }
+    .section {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeInUp 1s ease-in;
+    }
+    .product-img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .product-img:hover {
+      transform: scale(1.05);
+    }
+    .highlights ul, .contact ul {
+      list-style: none;
+      padding: 0;
+    }
+    .highlights li, .contact li {
+      margin: 10px 0;
+      font-size: 1.1em;
+    }
+    .highlights li::before {
+      content: "✔️ ";
+    }
+    .model {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+    a {
+      color: #ff6e00;
+      text-decoration: none;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>TSG Cables</h1>
-    <p><em>Bharosa bhi, Speed bhi</em></p>
+    <h1>TSG Data Cable</h1>
+    <p>Bharosa bhi, Speed bhi</p>
   </header>
 
-  <section class="highlights">
-    <h2>Product Highlights</h2>
+  <section class="section highlights">
+    <h2>🔌 Product Highlights</h2>
     <p class="model">Model No: TSG2601</p>
+    <img src="https://via.placeholder.com/400x250?text=TSG+Cable" alt="TSG Cable Image" class="product-img" />
     <ul>
-      <li>⚡ Fast Charging & Quick Power Boost</li>
-      <li>💎 Durable Build with Premium Material</li>
-      <li>🚀 High-Speed Data Transmission</li>
-      <li>🔌 Compatible with Any USB Edition</li>
-      <li>✅ Reliable High-Quality Charging Cable</li>
+      <li>Fast Charging & Quick Power Boost</li>
+      <li>Durable Build with Premium Material</li>
+      <li>High-Speed Data Transmission</li>
+      <li>Compatible with Any USB Edition</li>
+      <li>Reliable High-Quality Charging Cable</li>
     </ul>
   </section>
 
-  <section class="contact">
-    <h2>Contact Us</h2>
+  <section class="section">
+    <h2>📱 Mobile Charging & Data Transfer</h2>
+    <img src="https://via.placeholder.com/400x250?text=Charging+Demo" alt="Charging Demo" class="product-img" />
+    <p>
+      TSG Data Cable delivers ultra-fast charging for all smartphones and devices. With high-speed data sync,
+      you can transfer files, videos, and photos in seconds. Designed for durability and performance, it’s your
+      perfect daily companion.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>🏢 About TSG Cables</h2>
+    <img src="https://via.placeholder.com/400x250?text=Brand+Story" alt="Brand Story" class="product-img" />
+    <p>
+      <strong>TSG Cables</strong> is built for the modern Indian user — fast, reliable, and trustworthy. Whether you're
+      commuting, gaming, or working, our cables keep your devices powered and connected. Engineered with premium materials
+      and tested for durability, TSG stands for <em>Trust, Speed, Growth</em>.
+    </p>
+  </section>
+
+  <section class="section contact">
+    <h2>📞 Contact Us</h2>
     <ul>
       <li>Email: <a href="mailto:customercare@tsgindia.in">customercare@tsgindia.in</a></li>
       <li>Phone: <a href="tel:+918810573272">+91 8810573272</a></li>
@@ -42,5 +127,10 @@
       <li>Location: Delhi, India</li>
     </ul>
   </section>
+
+  <footer>
+    &copy; 2025 TSG Cables. All rights reserved.
+  </footer>
+
 </body>
 </html>
